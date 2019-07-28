@@ -1,12 +1,15 @@
 apps:
     # 启动脚本，入口文件
-  - script: bin/www.js
+  - script: ./bin/www.js
     name: qqmusic
     env:
       COMMON_VARIABLE: true
+    env: 
+      NODE_ENV: development
     # 生产环境变量
     env_production:
       NODE_ENV: production
+        
 #部署 
 deploy:
   production:
@@ -24,6 +27,6 @@ deploy:
     # 取消key校验
     ssh_options: StrictHostKeyChecking=no
     pre-deploy: git fetch --all
-    post-deploy: 'cnpm i  --dev && npm run build && npm run stop && npm run prd'
+    post-deploy: 'cnpm i --dev && npm run build && npm run stop && npm run prd'
     env:
       NODE_ENV: production
