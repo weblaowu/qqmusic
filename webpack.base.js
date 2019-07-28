@@ -25,7 +25,7 @@ module.exports = {
   },
   output: {
     filename: isDev ? '[name]-[hash:8].js' : '[name]-[chunkhash:6].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'public')
   },
   module: {
     rules: [
