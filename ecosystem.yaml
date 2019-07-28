@@ -1,6 +1,6 @@
 apps:
     # 启动脚本，入口文件
-  - script: app.js
+  - script: ./www.js
     name: qqmusic
     env:
       COMMON_VARIABLE: true
@@ -27,6 +27,6 @@ deploy:
     # 取消key校验
     ssh_options: StrictHostKeyChecking=no
     pre-deploy: git fetch --all
-    post-deploy: 'cnpm i --dev && npm run build && npm run stop && npm run prd'
+    post-deploy: 'cnpm i --dev && npm run build'
     env:
       NODE_ENV: production
