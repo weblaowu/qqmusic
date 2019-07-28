@@ -4,17 +4,17 @@ import axios from 'axios';
 // 1. 请求轮播图 
 const getSliderlist = () => {
   // slider 的 url 
-  const url = `/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg`;
-  const data = Object.assign({}, commonParams, {
-    uin: 0,
-    platform: 'h5',
-    needNewCode: 1
-  });
+  const url = `/slidelist`;
+  // const data = Object.assign({}, commonParams, {
+  //   uin: 0,
+  //   platform: 'h5',
+  //   needNewCode: 1
+  // });
   // 发起请求 AJax
-  return axios.get(url, {
+  return axios.get(url/* , {
     params: data
-  }).then(res => {
-    return Promise.resolve(res.data)
+  }*/).then(res => {
+    return Promise.resolve(res)
   }).catch(err => {
     return Promise.reject(err)
   })

@@ -1,6 +1,6 @@
 <template>
   <div class="slider">
-    <van-swipe class="slider-group">
+    <van-swipe class="slider-group" :autoplay="5000">
       <van-swipe-item class='slider-item' v-for='(item,index) in subSlider' :key='index'>
         <img :src='item.picUrl'>
       </van-swipe-item> 
