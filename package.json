@@ -4,10 +4,10 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon ./www.js",
+    "start": "./node_modules/.bin/nodemon ./app.js",
     "dev": "cross-env NODE_ENV=development node webpack.dev.js",
-    "prd": "pm2 start ./www.js",
-    "stop": "pm2 stop ./www.js",
+    "prd": "pm2 start ./app.js",
+    "stop": "pm2 stop ./app.js",
     "build": "cross-env NODE_ENV=production node webpack.prod.js"
   },
   "keywords": [],
