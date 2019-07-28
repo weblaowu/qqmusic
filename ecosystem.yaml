@@ -1,6 +1,6 @@
 apps:
     # 启动脚本，入口文件
-  - script: ./www.js
+  - script: app.js
     name: qqmusic
     env:
       COMMON_VARIABLE: true
