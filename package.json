@@ -5,10 +5,10 @@
   "main": "main.js",
   "scripts": {
     "start": "./node_modules/.bin/nodemon bin/www",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.dev.js --progress",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.dev.js",
     "prd": "pm2 start bin/www",
     "stop": "pm2 stop bin/www",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js --progress"
+    "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
