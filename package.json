@@ -6,8 +6,8 @@
   "scripts": {
     "start": "./node_modules/.bin/nodemon bin/www",
     "dev": "cross-env NODE_ENV=development node webpack.dev.js",
-    "prd": "pm2 start ./bin/www",
-    "stop": "pm2 stop ./bin/www",
+    "prd": "pm2 start ./bin/www.js",
+    "stop": "pm2 stop ./bin/www.js",
     "build": "cross-env NODE_ENV=production node webpack.prod.js"
   },
   "keywords": [],
