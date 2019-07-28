@@ -10,7 +10,7 @@ apps:
 #部署 
 deploy:
   production:
-    user: centos
+    user: root
     #服务器IP
     host: 
       - 47.100.240.168
